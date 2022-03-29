@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4228" data-name="Rectangle 4228" width="20" height="20" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="baggage-mono" clip-path="url(#clip-path)">
+    <g id="Group_13622" data-name="Group 13622" transform="translate(2.5 1.667)">
+      <rect id="Rectangle_4388" data-name="Rectangle 4388" width="0.631" height="2.818" transform="translate(3.153 1.264)" fill="#4c4c4c" opacity="0.32"/>
+      <rect id="Rectangle_4389" data-name="Rectangle 4389" width="0.631" height="2.818" transform="translate(5.675 1.264)" fill="#4c4c4c" opacity="0.32"/>
+      <path id="Path_11798" data-name="Path 11798" d="M62.424,0h3.784a.63.63,0,0,1,.631.629h0a.63.63,0,0,1-.631.629H62.424a.63.63,0,0,1-.631-.629h0A.63.63,0,0,1,62.424,0Z" transform="translate(-59.586)" fill="#4c4c4c"/>
+      <path id="Subtraction_8" data-name="Subtraction 8" d="M4.858,12.579h-3.6A1.258,1.258,0,0,1,0,11.321V1.258A1.259,1.259,0,0,1,1.261,0H8.2A1.258,1.258,0,0,1,9.459,1.258V3.029H8.277a1.029,1.029,0,0,0-.408.083,1.044,1.044,0,0,0-.333.227,1.065,1.065,0,0,0-.307.75V5.151H4.872a1.029,1.029,0,0,0-.408.083,1.044,1.044,0,0,0-.333.227,1.065,1.065,0,0,0-.307.75v5.305a1.065,1.065,0,0,0,.307.75,1.044,1.044,0,0,0,.333.227,1.029,1.029,0,0,0,.394.083Zm4.6-7.427H8.277V4.09H9.459V5.151Z" transform="translate(0 4.088)" fill="#4c4c4c"/>
+      <path id="Path_11796" data-name="Path 11796" d="M143.675,221.751v5.305a1.054,1.054,0,0,1-1.048,1.061h-9.166a1.054,1.054,0,0,1-1.048-1.061v-5.305a1.054,1.054,0,0,1,1.048-1.061h9.166A1.054,1.054,0,0,1,143.675,221.751Z" transform="translate(-128.589 -211.451)" fill="#4c4c4c" opacity="0.8"/>
+      <path id="Path_11797" data-name="Path 11797" d="M251.625,152.192v-1.061a1.054,1.054,0,0,0-1.048-1.061h-2.357a1.054,1.054,0,0,0-1.048,1.061v1.061h1.048v-1.061h2.357v1.061Z" transform="translate(-239.943 -142.953)" fill="#4c4c4c" opacity="0.32"/>
+    </g>
+  </g>
+</svg>

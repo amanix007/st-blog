@@ -1,0 +1,105 @@
+image: atlassian/default-image:2
+
+clone:
+  depth: full
+  
+options:
+  size: 2x  # all steps in this repo get 8GB memory
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: "Build and push"
+          services:
+            - docker
+          caches:
+            - docker
+            - node            
+          image: atlassian/pipelines-awscli:1.16.302
+          script:
+            - echo $(aws ecr get-login --no-include-email --region ap-southeast-1)  > login.sh
+            - sh login.sh
+            - docker build -t st-prod-blog:${BITBUCKET_BUILD_NUMBER} .
+            - docker tag st-prod-blog:${BITBUCKET_BUILD_NUMBER} $DOCKER_ECR_REPO_URL/st-prod-blog:${BITBUCKET_BUILD_NUMBER}
+            - docker push $DOCKER_ECR_REPO_URL/st-prod-blog:${BITBUCKET_BUILD_NUMBER}
+      - step:
+          name: "Deploy to PRODUCTION"
+          deployment: production
+          script:
+            - envsubst < k8s-prod-deployment.tpl.yaml > k8s-prod-deployment.yaml
+            - cat k8s-prod-deployment.yaml
+            - pipe: atlassian/aws-eks-kubectl-run:1.2.2
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                CLUSTER_NAME: $CLUSTER_NAME_PROD
+                KUBECTL_COMMAND: "apply"
+                RESOURCE_PATH: "k8s-prod-deployment.yaml"
+                DEBUG: "true"
+      - step:
+          name: "Copy Source code to AWS CodeCommit"
+          script:
+            - ls -lah
+            - git branch -a
+            - echo $CodeCommitKey > ~/.ssh/codecommit_rsa.tmp
+            - base64 -d ~/.ssh/codecommit_rsa.tmp > ~/.ssh/codecommit_rsa
+            - chmod 400 ~/.ssh/codecommit_rsa
+            - echo $CodeCommitConfig > ~/.ssh/config.tmp
+            - base64 -d  ~/.ssh/config.tmp > ~/.ssh/config
+            - set +e
+            - ssh -o StrictHostKeyChecking=no $CodeCommitHost
+            - set -e
+            - git remote add codecommit $CodeCommitDomain/sharetrip-st-blog
+            - git push -v codecommit $BITBUCKET_BRANCH                
+    develop:
+      - step:
+          name: "Build and push"
+          services:
+            - docker
+          caches:
+            - docker
+            - node            
+          image: atlassian/pipelines-awscli:1.16.302
+          script:
+            - echo $(aws ecr get-login --no-include-email --region ap-southeast-1)  > login.sh
+            - sh login.sh
+            - docker build -t st-stg-blog:${BITBUCKET_BUILD_NUMBER} -f Dockerfile.dev .
+            - docker tag st-stg-blog:${BITBUCKET_BUILD_NUMBER} $DOCKER_ECR_REPO_URL/st-stg-blog:${BITBUCKET_BUILD_NUMBER}
+            - docker push $DOCKER_ECR_REPO_URL/st-stg-blog:${BITBUCKET_BUILD_NUMBER}
+      - step:
+          name: "Deploy to STAGING"
+          deployment: staging
+          script:
+            - envsubst < k8s-stg-deployment.tpl.yaml > k8s-stg-deployment.yaml
+            - cat k8s-stg-deployment.yaml
+            - pipe: atlassian/aws-eks-kubectl-run:1.2.2
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                CLUSTER_NAME: $CLUSTER_NAME_STG
+                KUBECTL_COMMAND: "apply"
+                RESOURCE_PATH: "k8s-stg-deployment.yaml"
+                DEBUG: "true"
+      - step:
+          name: "Copy Source code to AWS CodeCommit"
+          script:
+            - ls -lah
+            - git branch -a
+            - echo $CodeCommitKey > ~/.ssh/codecommit_rsa.tmp
+            - base64 -d ~/.ssh/codecommit_rsa.tmp > ~/.ssh/codecommit_rsa
+            - chmod 400 ~/.ssh/codecommit_rsa
+            - echo $CodeCommitConfig > ~/.ssh/config.tmp
+            - base64 -d  ~/.ssh/config.tmp > ~/.ssh/config
+            - set +e
+            - ssh -o StrictHostKeyChecking=no $CodeCommitHost
+            - set -e
+            - git remote add codecommit $CodeCommitDomain/sharetrip-st-blog
+            - git push -v codecommit $BITBUCKET_BRANCH                
+
+definitions:
+  services:
+    docker:
+      memory: 7128

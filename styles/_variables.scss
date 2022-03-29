@@ -1,0 +1,180 @@
+//colors
+$black: #000000;
+$white: #ffffff;
+$orange: #ff7733;
+$orangeNew: #ff5a00;
+
+$muteColor: #4C4C4C;
+$green: #43A046;
+$ratting: #FFD321;
+
+.white-color {
+  color: $white;
+}
+.white-bg {
+  background-color: $white;
+}
+
+// $primaryColor: #2a8cff;
+// $primaryDarkColor: #245dd8;
+
+$primaryColor: #1882ff;
+
+$primaryDarkColor: #235fd8;
+//
+$secondaryColor: $orange;
+$secondaryDarkColor: $orange;
+
+.primaryColor-color {
+  color: $primaryColor;
+}
+.primaryColor-bg {
+  background-color: $primaryColor;
+}
+
+//
+$error: #d32f2f;
+$errorDark: #b71c1c;
+$caution: #f9a825;
+$cautionDark: #f57f17;
+$success: #43a046;
+$successDark: #2e7d31;
+$success2: #81c784;
+.errorDark-color {
+  color: $errorDark;
+}
+.errorDark-bg {
+  background-color: $errorDark;
+}
+//
+//
+$color1: $primaryColor;
+
+$color2: $secondaryColor;
+// $color1: #28b5e6;
+// $color2: #f58a38;
+$color3: #9fc65d;
+//
+$purple: #665eff;
+$bColo1: $secondaryColor;
+//
+$blue1: #4688f1;
+$golden1: #fb9400;
+$golden2: #f37b20;
+$red1: #db4437;
+$green1: #217f4e;
+//
+$gray1: #f7f7f7;
+$gray2: #f5f5f5;
+$gray3: #eeeeee;
+$gray4: #f4f6f8;
+$gray5: #cccccc;
+$textgray1: #4c4c4c;
+
+//
+//
+//
+//
+$fontcolor1: #333333;
+$bodycolor: #000000;
+$headercolor: #000;
+//
+// Fonts
+$bodyfont: "Poppins", sans-serif;
+$font2: $bodyfont;
+// $bodyfont: "Arimo", sans-serif;
+// $font2: "Muli", sans-serif;
+// $bodyfont: "Work Sans",
+// sans-serif;
+// $font2: "Work Sans",
+// sans-serif;
+$IMG_URL: "/assets";
+$baseFontSize: 16;
+
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+@function em($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+//
+//
+//
+//
+//
+//
+//
+//
+// Common Margin Padding
+$s1: 4px;
+$s2: 8px;
+$s3: 12px;
+$s4: 16px;
+$s5: 20px;
+$s6: 24px;
+$s7: 28px;
+$s8: 32px;
+
+// Common Margin Padding end
+//
+//
+//
+//
+//
+//
+//
+//
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  /* fallback/image non-cover color */
+  background-color: $from;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+  /* IE10+ */
+  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+  /* Standard */
+  background: linear-gradient(to right, $from 0%, $to $stop);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$from', endColorstr='$to', GradientType=1);
+}
+
+@mixin vertical-gradient($startColor: #555, $endColor: #333) {
+  background-color: mix($startColor, $endColor, 100%);
+  background-image: -moz-linear-gradient(top, $startColor, $endColor); // FF 3.6+
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
+  background-image: -webkit-linear-gradient(top, $startColor, $endColor); // Safari 5.1+, Chrome 10+
+  background-image: -o-linear-gradient(top, $startColor, $endColor); // Opera 11.10
+  background-image: linear-gradient(to bottom, $startColor, $endColor); // Standard, IE10
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}', GradientType=0); // IE9 and down
+}
+
+
+
+// extra variables
+$fontPrimary:"SF Pro Display", "Segoe UI", "Source Sans Pro", Sans-Serif;
+$fontSecondary: 'Rubik', sans-serif;
+$fontTertiary: 'Poppins', sans-serif;

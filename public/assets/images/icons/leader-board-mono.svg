@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4254" data-name="Rectangle 4254" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="leader-board-mono" clip-path="url(#clip-path)">
+    <path id="Path_11271" data-name="Path 11271" d="M70.147,54.9l4.29,4.29a.159.159,0,0,0,.113.047h2.933a1.922,1.922,0,0,1,1.969,1.969V74.241a1.922,1.922,0,0,1-1.969,1.969H61.452a1.924,1.924,0,0,1-1.969-1.969V61.21a1.924,1.924,0,0,1,1.969-1.969h2.934a.161.161,0,0,0,.113-.047l4.29-4.29A.962.962,0,0,1,70.147,54.9Zm-8.7,7.026V73.521a.72.72,0,0,0,.72.72H76.763a.72.72,0,0,0,.72-.72V61.93a.72.72,0,0,0-.72-.72H62.172A.72.72,0,0,0,61.452,61.93ZM69,57.224l-1.744,1.744a.16.16,0,0,0,.113.273h4.248a.16.16,0,0,0,.114-.272l-1.708-1.74A.72.72,0,0,0,69,57.224Z" transform="translate(-57.483 -53.623)"/>
+    <rect id="Rectangle_4349" data-name="Rectangle 4349" width="5.016" height="3" rx="0.32" transform="translate(5.985 9.602)" opacity="0.72"/>
+    <rect id="Rectangle_4350" data-name="Rectangle 4350" width="5.016" height="3.984" rx="0.32" transform="translate(5.985 14.618)" opacity="0.8"/>
+    <rect id="Rectangle_4351" data-name="Rectangle 4351" width="4.949" height="9" rx="0.32" transform="translate(13.036 9.602)" opacity="0.88"/>
+  </g>
+</svg>

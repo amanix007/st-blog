@@ -1,0 +1,29 @@
+
+
+.HotelSearchResultComponent {
+    padding-bottom: rem(148);
+    @media (max-width: 767px) {
+        padding-bottom: rem(48);
+    }
+}
+
+
+
+.daily-deal {
+    padding: 1px 20px;
+    background-color: #B14AFD;
+    font-size: rem(20);
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+    .mdi {
+        margin-right: 15px;
+        font-size: rem(32);
+    }
+}
+
+
+
+

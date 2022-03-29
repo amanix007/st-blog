@@ -1,0 +1,82 @@
+.white-color {
+  color: #ffffff; }
+
+.white-bg {
+  background-color: #ffffff; }
+
+.primaryColor-color {
+  color: #1882ff; }
+
+.primaryColor-bg {
+  background-color: #1882ff; }
+
+.errorDark-color {
+  color: #b71c1c; }
+
+.errorDark-bg {
+  background-color: #b71c1c; }
+
+.ModuleItemSearch .Module-search-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px; }
+  .ModuleItemSearch .Module-search-filter .left {
+    flex-basis: 310px; }
+    .ModuleItemSearch .Module-search-filter .left h2 span {
+      font-size: 1rem;
+      color: #414042;
+      font-weight: normal; }
+  .ModuleItemSearch .Module-search-filter .filter-btn {
+    color: #1882ff;
+    border: 1px solid #1882ff;
+    display: inline-block;
+    border-radius: 3px;
+    min-width: 36px;
+    height: 36px;
+    text-align: center; }
+    .ModuleItemSearch .Module-search-filter .filter-btn i {
+      font-size: 24px; }
+
+.ModuleItemSearch .sorting {
+  flex-grow: 1;
+  text-align: right; }
+  .ModuleItemSearch .sorting .form-inline {
+    justify-content: flex-end; }
+    .ModuleItemSearch .sorting .form-inline .form-control {
+      line-height: 44px;
+      height: 44px !important;
+      max-width: 220px;
+      flex-grow: 1;
+      color: #636363;
+      border-color: #636363;
+      margin-left: 8px;
+      font-weight: 600; }
+      @media (max-width: 600px) {
+        .ModuleItemSearch .sorting .form-inline .form-control {
+          min-width: 100%;
+          margin-bottom: 8px; } }
+      .ModuleItemSearch .sorting .form-inline .form-control.active {
+        color: #1882ff;
+        border-color: #1882ff; }
+
+.ModuleItemSearch .module-search-filter-collapse .sorting {
+  padding: 35px 0px; }
+  @media (max-width: 600px) {
+    .ModuleItemSearch .module-search-filter-collapse .sorting {
+      padding: 0;
+      margin-bottom: 30px; } }
+
+.ModuleItemSearch .Module-search-result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .ModuleItemSearch .Module-search-result .Module-item {
+    margin-bottom: 28px;
+    width: 32%; }
+    @media (max-width: 767px) {
+      .ModuleItemSearch .Module-search-result .Module-item {
+        width: calc(50% - 14px); } }
+    @media (max-width: 480px) {
+      .ModuleItemSearch .Module-search-result .Module-item {
+        min-width: 100%; } }

@@ -1,0 +1,264 @@
+@import "../../styles/variables";
+
+.bottom-details-parent {
+  padding-top: 10px;
+  border-top: 1px solid #e5e5e5;
+
+  span {
+    word-break: break-word;
+  }
+}
+
+.bottom-details {
+  padding-top: 10px;
+  font-size: 12px;
+
+  div {
+    display: inline-block;
+  }
+
+  .flight-details {
+    margin-right: rem(100);
+
+    @media (max-width: 991px) {
+      margin-right: 10px;
+    }
+
+    > a {
+      color: $color1;
+
+      &:hover {
+        color: $color1;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .media {
+    margin-right: 95px;
+
+    @media (max-width: 991px) {
+      margin-right: 45px;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  .share {
+    font-size: 14px;
+    margin-right: 40px;
+
+    @media (max-width: 991px) {
+      margin-right: 20px;
+    }
+  }
+
+  .weight {
+    margin-right: 40px;
+
+    @media (max-width: 991px) {
+      margin-right: 20px;
+    }
+  }
+
+  .seat-left {
+  }
+}
+
+.body-details {
+  // padding: 16px;
+  border-top: 1px solid #e5e5ea;
+  border-bottom: 1px solid #e5e5ea;
+  display: flex;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+  .TabPanel {
+    padding-top: 20px;
+    padding-bottom: 24px;
+    color: #000000;
+  }
+  .TabPanel-inner {
+  }
+
+  .segment-details {
+    padding: 20px 16px;
+    width: 59%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .other-details {
+    padding: 20px 16px;
+    width: 41%;
+    border-left: 1px solid #e5e5ea;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    .indicator {
+      // background: $primaryColor;
+      // height: 100%;
+      // border-radius: 4px;
+      // width: 112px !important;
+      // z-index: -1;
+    }
+    .tab-button {
+      // border-right: 1px solid #d1d1d6;
+      // min-height: 32px;
+      // min-width: 80px;
+      // background: transparent;
+      padding: 4px;
+      @media (max-width: 1200px) {
+        min-width: 100px;
+      }
+      .wrapper > span > span {
+        font-size: rem(12);
+      }
+    }
+  }
+  > .details {
+    // padding: 16px;
+    padding-bottom: 0;
+    // border-top: 2px solid $primaryColor;
+    // border-bottom: 2px solid $primaryColor;
+    &:first-child {
+      // border-bottom: 0 solid #000;
+    }
+    @media (max-width: 575px) {
+      padding: 0px;
+      border: 1px solid $primaryColor;
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
+
+    &.depart:last-child {
+      padding-top: 0;
+    }
+
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #000;
+      background-color: $gray2;
+      padding: 8px 16px;
+      margin: -8px -16px;
+      @media (max-width: 575px) {
+        flex-direction: column;
+        padding-top: 8px;
+      }
+
+      .code {
+        font-size: rem(20);
+
+        strong {
+          color: #000000;
+          margin-right: 16px;
+        }
+
+        span {
+        }
+      }
+
+      .date-duration {
+        display: flex;
+        align-items: center;
+
+        > div {
+          display: flex;
+          align-items: center;
+
+          .mdi {
+            font-size: rem(20);
+            margin-right: 8px;
+          }
+
+          span {
+            font-weight: 500;
+          }
+        }
+
+        .date {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+.flight-block {
+  padding: 16px 0;
+  padding-bottom: 0;
+
+  .airline-details {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media (max-width: 575px) {
+      padding: 0 4px;
+    }
+
+    .img {
+      height: 24px;
+      width: 24px;
+      margin-right: 8px;
+    }
+    .strong {
+      margin-left: auto;
+      font-weight: 500;
+    }
+
+    .airlineName {
+      margin-right: 8px;
+      font-size: rem(12);
+    }
+
+    .flightNumber {
+      font-size: rem(10);
+      color: $textgray1;
+      // margin-left: 16px;
+    }
+  }
+
+  .layover {
+    margin-bottom: 12px;
+    @media (max-width: 575px) {
+      padding: 0 12px;
+    }
+
+    // margin-top: -8px;
+    span {
+    }
+
+    .fw-600 {
+    }
+  }
+}
+
+.flight-info-table {
+  .i-row {
+    display: flex;
+    align-items: center;
+    font-size: rem(12);
+    margin-bottom: 8px;
+    // line-height: 1.5;
+    > * {
+      width: 50%;
+      // padding: 4px;
+    }
+    .i-label {
+      color: $textgray1;
+    }
+
+    .i-value {
+      font-weight: 500;
+    }
+  }
+}

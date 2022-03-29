@@ -1,0 +1,11 @@
+<svg id="bookings-mono" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4064" data-name="Rectangle 4064" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="bookings-mono-2" data-name="bookings-mono" clip-path="url(#clip-path)">
+    <path id="Path_10550" data-name="Path 10550" d="M.016-12.516H-.909v-1.969H.016Zm0,4.5H-.909V-9.984H.016Zm0,4.5H-.909V-5.484H.016Zm0-13.5H-8a2.106,2.106,0,0,0-1.418.609A1.9,1.9,0,0,0-9.984-15v3.984a2.106,2.106,0,0,1,1.418.609A1.9,1.9,0,0,1-8-9a1.9,1.9,0,0,1-.567,1.406,2.106,2.106,0,0,1-1.418.609V-3a1.9,1.9,0,0,0,.567,1.406A2.106,2.106,0,0,0-8-.984L.016-.941Z" transform="translate(12 21)" fill="#fff"/>
+    <path id="Path_11249" data-name="Path 11249" d="M-9.984-12.516h.925v-1.969h-.925Zm0,4.5h.925V-9.984h-.925Zm0,4.5h.925V-5.484h-.925Zm0-13.5H-1.97a2.106,2.106,0,0,1,1.418.609A1.9,1.9,0,0,1,.016-15v3.984a2.106,2.106,0,0,0-1.418.609A1.9,1.9,0,0,0-1.97-9,1.9,1.9,0,0,0-1.4-7.594a2.106,2.106,0,0,0,1.418.609V-3A1.9,1.9,0,0,1-.552-1.594,2.106,2.106,0,0,1-1.97-.984l-8.015.043Z" transform="translate(21.984 21)" fill="#fff" opacity="0.8"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg id="notifications-mono" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4065" data-name="Rectangle 4065" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="notifications-mono-2" data-name="notifications-mono" clip-path="url(#clip-path)">
+    <path id="Path_10555" data-name="Path 10555" d="M3.111,0a2.646,2.646,0,0,1-.775,1.789A2.427,2.427,0,0,1,.548,2.5a2.427,2.427,0,0,1-1.789-.715A2.646,2.646,0,0,1-2.016,0Z" transform="translate(11.452 20.465)" opacity="0.72"/>
+    <circle id="Ellipse_638" data-name="Ellipse 638" cx="2" cy="2" r="2" transform="translate(10 2)" opacity="0.72"/>
+    <path id="Path_11248" data-name="Path 11248" d="M9-2.016V-.984H-9V-2.016l2.016-1.969v-6a6.781,6.781,0,0,1,1.359-4.2,7.012,7.012,0,0,1,3.609-2.508,7.03,7.03,0,0,1,4.031,0A7.012,7.012,0,0,1,5.625-14.18a6.781,6.781,0,0,1,1.359,4.2v6Z" transform="translate(12 21)"/>
+  </g>
+</svg>

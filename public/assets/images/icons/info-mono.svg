@@ -1,0 +1,12 @@
+<svg id="info-mono" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4270" data-name="Rectangle 4270" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="info-mono-2" data-name="info-mono" clip-path="url(#clip-path)">
+    <g id="Group_13554" data-name="Group 13554" transform="translate(-88.193 -54.242)">
+      <path id="Path_11272" data-name="Path 11272" d="M107.256,59.148a10.074,10.074,0,1,1-7.079-2.906A9.926,9.926,0,0,1,107.256,59.148Zm-6.747,2.062h-.663a.653.653,0,0,0-.653.654v.709a.653.653,0,0,0,.653.653h.663a.653.653,0,0,0,.653-.653v-.709A.653.653,0,0,0,100.509,61.21Zm0,4.032h-.663a.653.653,0,0,0-.653.653v4.693a.653.653,0,0,0,.653.654h.663a.653.653,0,0,0,.653-.654V65.895A.653.653,0,0,0,100.509,65.242Z"/>
+    </g>
+  </g>
+</svg>

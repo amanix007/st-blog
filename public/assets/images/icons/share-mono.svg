@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4314" data-name="Rectangle 4314" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="share-mono" clip-path="url(#clip-path)">
+    <g id="Group_14258" data-name="Group 14258" transform="translate(-405 -929)">
+      <path id="Subtraction_68" data-name="Subtraction 68" d="M-1594.858,4.17h0l-5.141-2.4A4,4,0,0,0-1599.069,0l5.143,2.4a4,4,0,0,0-.932,1.771Z" transform="translate(2013.963 941.915)" opacity="0.56"/>
+      <path id="Subtraction_67" data-name="Subtraction 67" d="M-1599.069,9.086v0A4.005,4.005,0,0,0-1600,7.313l5.142-2.4a4,4,0,0,0,.932,1.772l-5.141,2.4Z" transform="translate(2013.963 931)" opacity="0.56"/>
+      <circle id="Ellipse_684" data-name="Ellipse 684" cx="4" cy="4" r="4" transform="translate(407 937)"/>
+      <circle id="Ellipse_685" data-name="Ellipse 685" cx="4" cy="4" r="4" transform="translate(419 931)" opacity="0.8"/>
+      <circle id="Ellipse_686" data-name="Ellipse 686" cx="4" cy="4" r="4" transform="translate(419 943)" opacity="0.72"/>
+    </g>
+  </g>
+</svg>

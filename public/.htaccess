@@ -1,0 +1,4 @@
+<IfModule mod_rewrite.c>
+OnRewriteCond %{HTTP_HOST} ^www.blog.sharetrip.net$ [NC]
+RewriteRule ^(.*)$ https://blog.sharetrip.net/$1 [R=301,L]
+</IfModule>

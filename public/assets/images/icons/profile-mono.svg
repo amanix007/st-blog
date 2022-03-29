@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4068" data-name="Rectangle 4068" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="profile-mono" clip-path="url(#clip-path)">
+    <path id="Path_10556" data-name="Path 10556" d="M.661-17.016a4.65,4.65,0,0,1,3.285,1.369A4.491,4.491,0,0,1,5.26-12.335,4.491,4.491,0,0,1,3.946-9.022,4.457,4.457,0,0,1,.661-7.708,4.457,4.457,0,0,1-2.624-9.022a4.491,4.491,0,0,1-1.314-3.312,4.491,4.491,0,0,1,1.314-3.312A4.65,4.65,0,0,1,.661-17.016Z" transform="translate(11.339 21)"/>
+    <path id="Path_11245" data-name="Path 11245" d="M0-6.984A13.052,13.052,0,0,1,5.672-5.812Q7.922-4.687,8.016-3V-.984H-8.016V-3q.094-1.687,2.344-2.812A13.052,13.052,0,0,1,0-6.984Z" transform="translate(12 21)" opacity="0.8"/>
+  </g>
+</svg>

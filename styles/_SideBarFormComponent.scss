@@ -1,0 +1,202 @@
+// @import "../../assets/scss/variables";
+
+.SideBarFormComponent {
+  width: 460px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  transition: right 400ms ease-in-out;
+  background-color: #ffffff;
+  box-shadow: -4px 0px 16px rgba(0, 0, 0, 0.16);
+  z-index: 1000;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    top: 48px;
+    
+  }
+
+  &.open {
+    transition: right 400ms ease-in-out;
+    right: 0;
+
+    
+    .header {
+      @media (max-width: 767px) {
+        transition: right 400ms ease-in-out;
+        right: 0;
+        top: 48px;
+      }
+    }
+  }
+
+  .btn {
+    border-radius: 0;
+  }
+
+  .header {
+    padding: 32px 30px;
+    border-bottom: 1px solid #e0e0e1;
+    color: #4c4c4c;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+
+    @media (max-width: 767px) {
+      transition: right 400ms ease-in-out;
+      padding: 12px 30px;
+      position: fixed;
+      top: 48px;
+      right: -100%;
+      width: 100%;
+      background-color: #fff;
+      z-index: 4;
+    }
+
+    i {
+      font-size: 1.5rem;
+      margin-right: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      color: $primaryColor;
+      &:hover {
+        color: $primaryDarkColor;
+      }
+    }
+  }
+
+  .form-body {
+    padding: 24px 30px 32px 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 143px);
+    @media (max-height: 767px) {
+      margin-top: 48px;
+      padding-top: 32px;
+      padding-top: 32px;
+      height: calc(100vh - 180px);
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    label {
+      &:not(.custom-control-label) {
+        font-size: 0.875rem;
+      }
+    }
+
+    .form-block {
+      margin-top: 24px;
+
+      h5 {
+        font-weight: 500;
+        margin-bottom: 16px;
+      }
+    }
+
+    .travel-date {
+      .SingleDatePicker {
+        display: block;
+
+        .SingleDatePickerInput {
+          display: block;
+
+          .DateInput {
+            display: block;
+            width: 100%;
+            position: relative;
+
+            &:before {
+              content: "\F0ED";
+              display: inline-block;
+              font: normal normal normal 24px/1 "Material Design Icons";
+              font-size: 1.5rem;
+              text-rendering: auto;
+              line-height: inherit;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+              position: absolute;
+              right: 12px;
+              top: 8px;
+              color: #414142;
+            }
+
+            input {
+              border: 1px solid #e6e6e6;
+              border-radius: 3px;
+              height: 48px !important;
+              line-height: 48px;
+              font-size: rem(16);
+            }
+          }
+        }
+      }
+    }
+
+    .custom-control {
+      padding: 10px 16px;
+      padding-left: 31px;
+
+      .custom-control-label {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 1rem;
+        padding-left: 10px;
+
+        &:before,
+        &:after {
+          top: -3.5px;
+          overflow: hidden;
+          background-color: #ffffff;
+          border: 3px solid #636363;
+          border-radius: 3px;
+          width: 25px;
+          height: 25px;
+          left: -30px;
+        }
+      }
+    }
+
+    .custom-control-input {
+      &:checked {
+        & ~ .custom-control-label {
+          color: $primaryColor;
+
+          &::before {
+            color: $primaryColor;
+            background-color: #ffffff;
+            font-size: 1.5rem;
+          }
+
+          &::after {
+            background-color: $primaryColor;
+            border-radius: 3px;
+            font-size: 1.5rem;
+            border: 0px;
+            background-size: 65% 65%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.agreetoTerms {
+  &:checked {
+    & ~ .custom-control-label {
+      font-weight: normal;
+    }
+  }
+
+  .custom-control-label {
+    color: #000000 !important;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+
+    &:before,
+    &:after {
+      top: 10% !important;
+    }
+  }
+}

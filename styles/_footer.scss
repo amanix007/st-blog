@@ -1,0 +1,199 @@
+$footerBg: $gray2;
+
+.site-footer {
+    padding-top: 96px;
+    padding-bottom: 103px;
+    background-color: $footerBg;
+
+    @media(max-width: 767px) {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    h5 {
+        margin-bottom: 24px;
+        @media(max-width: 767px){
+            margin-bottom: 10px;
+            font-size: rem(16);
+        }
+    }
+    .mdi{
+        line-height: 1;
+    }
+    .menu-area {
+        ul {
+            li {
+                margin-bottom: 10px;
+
+                a {
+                    display: block;
+                    font-weight: normal;
+                    font-size: rem(14);
+                    line-height: 18px;
+                    color: $textgray1;
+                    transition: .2s ease-in-out;
+                    transform: translateX(0px);
+
+                    &:hover {
+                        color: $primaryDarkColor;
+                        transform: translateX(2px);
+                    }
+                }
+            }
+        }
+    }
+
+    .address-area {
+        margin-top: 48px;
+
+        @media(max-width: 767px) {
+            margin-top: 20px;
+        }
+        .row {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+        .row-sm {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -4px;
+            margin-right: -4px;
+        }
+        [class^=w-]{
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .col {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        .w-2_5 {
+            flex: 0 0 calc(100% * 2 / 5);
+            max-width: calc(100% * 2 / 5);
+        }
+        .w-1_5 {
+            flex: 0 0 calc(100% / 5);
+            max-width: calc(100% / 5);
+            
+        }
+        .w-1_2 {
+            flex: 0 0 calc(100% / 2);
+            max-width: calc(100% / 2);
+        }
+        .w-xs-12{
+            @media(max-width: 575px){
+                flex: 1 1 auto;
+                max-width: 100%;
+                width: fit-content;
+            }
+        }
+        .w-xs-6{
+            @media(max-width: 575px){
+                flex: 1 1 auto;
+                max-width: 50%;
+                width: fit-content;
+            }
+        }
+        .image {
+            // width: 100%;
+            // background: #FAFAFA;
+            // border-radius: 8px;
+            // display: flex;
+            // justify-content: center;
+            img{
+                max-width: 167px;
+                width: 100%;
+            }
+        }
+    }
+
+    .contact-area {
+        @media(max-width: 767px) {
+            margin-top: 15px;
+        }
+    }
+
+    .mdi {
+        font-size: rem(22);
+    }
+
+    .social {
+        margin-top: 20px;
+        margin-bottom: 52px;
+
+        img {
+            max-width: 22px;
+            max-height: 22px;
+            width: auto;
+            height: auto;
+        }
+
+        ul {
+            li {
+                margin-right: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    display: inline-flex;
+                    color: #4C4C4C;
+                    transition: transform .3s ease-in-out;
+                    transform: translateY(0px);
+
+                    &:hover {
+                        transform: translateY(-2px);
+                        color: $primaryDarkColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .payent-methods {
+        @media(max-width: 480px) {
+            justify-content: space-between;
+        }
+
+        .image {
+            background-color: #FFF;
+            padding: 5px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            overflow: hidden;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            @media(max-width: 1023px) {
+                height: 50px;
+                width: auto;
+            }
+
+            @media(max-width: 480px) {
+                max-width: 30%;
+            }
+
+            img {
+                max-width: 100px;
+                max-height: 54px;
+                width: auto;
+                height: auto;
+                @media(max-width: 1023px) {
+                    max-height: 25px;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        @media(max-width: 767px) {
+            margin-top: 15px;
+        }
+    }
+}

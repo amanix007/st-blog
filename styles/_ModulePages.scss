@@ -1,0 +1,251 @@
+.ModulePage {
+    .ModuleSort {
+        background-color: #FAFAFA;
+        margin-top: 32px;
+        margin-bottom: 30px;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .text {
+            p {
+                margin-bottom: 0px;
+            }
+
+            span {
+                color: #4C4C4C;
+                font-size: rem(12);
+            }
+        }
+
+        .sort {
+            color: $primaryColor;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            cursor: pointer;
+
+            span {}
+
+            i {
+                margin-left: 8px;
+                font-size: rem(24);
+            }
+        }
+    }
+
+    .ModuleItem-list {
+        @media (min-width: 992px) {
+            padding-left: 30px;
+        }
+
+        .Module-item {
+            margin-bottom: 30px;
+        }
+    }
+
+    .ModulePage-header {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        .Module-destination {
+            position: relative;
+            background-color: #fff;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+            border-radius: 4px;
+
+            &:before {
+                content: "\f34e";
+                display: inline-block;
+                font: normal normal normal 24px/1 "Material Design Icons";
+                font-size: rem(32);
+                text-rendering: auto;
+                line-height: inherit;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                position: absolute;
+                left: 12px;
+                top: 20px;
+                color: #414042;
+
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                    top: calc(50% - 12px);
+                    left: 10px;
+                }
+            }
+
+            input {
+                padding: 23px 56px;
+                font-size: rem(36);
+                height: rem(86) !important;
+                line-height: rem(86) !important;
+                color: #000;
+
+                @media (max-width: 767px) {
+                    padding: 15px 30px;
+                    height: rem(72) !important;
+                    line-height: rem(72) !important;
+                    font-size: rem(20);
+                }
+            }
+        }
+
+        .popular-destinations {
+            max-width: 1020px;
+            margin: 0 auto;
+
+            >h2 {
+                @media (max-width: 767px) {
+                    font-size: 20px;
+                }
+            }
+
+            .destinations {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                @media (max-width: 510px) {
+                    justify-content: space-around;
+                }
+
+                .dest {
+                    cursor: pointer;
+                    width: 160px;
+                    height: 120px;
+                    margin-bottom: 12px;
+                    display: flex;
+                    background-size: cover;
+                    background-position: center center;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        font-size: rem(20);
+                        font-weight: bold;
+                        color: #fff;
+                        text-transform: capitalize;
+                    }
+                }
+
+                &.slider {
+                    display: block; // margin-right: calc((100vw - 100%) / -2);
+
+                    .dest {
+                        width: 110px;
+                        height: 80px;
+                        margin-right: 8px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .ModulePage-body {
+        .ModulePage-body-block {
+            @media (max-width: 767px) {}
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .left {
+                    h1 {
+                        @media (max-width: 767px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .right {
+                    color: $primaryColor;
+                    display: flex;
+                    align-items: center;
+
+                    .link {
+                        font-size: rem(16);
+                        font-weight: bold;
+                        color: $primaryColor;
+                        text-transform: uppercase;
+                        cursor: pointer;
+
+                        @media (max-width: 480px) {
+                            position: absolute;
+                            left: 0;
+                            bottom: -40px;
+                            width: 100%;
+                            display: block;
+                            text-align: center;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .s-nav {
+                        margin-left: 25px;
+
+                        &:hover {
+                            span {
+                                opacity: .5;
+                            }
+                        }
+
+                        span {
+                            cursor: pointer;
+                            display: inline-flex;
+                            height: rem(56);
+                            width: rem(56);
+                            line-height: rem(56);
+                            justify-content: center;
+                            text-align: left;
+                            border: 1px solid $primaryColor;
+                            border-radius: 3px;
+
+                            &:hover {
+                                opacity: 1 !important;
+                            }
+                        }
+
+                        i {
+                            font-size: 24px;
+                        }
+                    }
+
+                    .prev {
+                        margin-right: 8px;
+
+                        i {}
+                    }
+
+                    .next {
+                        i {}
+                    }
+                }
+            }
+        }
+
+        .body {
+            .Module-sliders {
+                // margin-right: calc(555px - 50vw);
+                margin-right: calc((100vw - 100%) / -2);
+
+                .Module-item {
+                    margin-right: 30px;
+                }
+
+                @media (max-width: 1200px) {
+
+                    // margin-right: 0;
+                    .Module-item {
+                        margin-right: 10px;
+                        max-width: 296px;
+                    }
+                }
+            }
+        }
+    }
+}
